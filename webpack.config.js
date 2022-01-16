@@ -16,7 +16,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new Dotenv(),
     new HtmlWebpackPlugin({
-      title: 'jsDevEnvironmentTemplate',
+      title: 'Hashiras Kiss',
       template: './src/index.html',
       inject: 'body'
     })
