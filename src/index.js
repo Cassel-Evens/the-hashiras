@@ -3,6 +3,12 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
+$(document).ready(() => {
+  $("#introContinue").click  (() => {
+    $("#styles").show();
+    $("#intro").hide()
+  });
+}
 // UI Logic
 
 /*Write a simple logic for each question (div). We can use IF statement logic
@@ -33,3 +39,16 @@ information about the hashira.*/
 //     $("#main").show();
 //     $("#splash").hide();
 //   });
+
+// modal test div for fullscreen modal:
+
+// <div class="modal" tabindex="-1">
+//   <div class="modal-dialog modal-fullscreen">
+//     <div class="modal-content">
+//       <div class="modal-body">
+//         <p>You must be 18+ to enter.</p>
+//         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK!</button>
+//       </div>
+//     </div>
+//   </div>
+// </div>
