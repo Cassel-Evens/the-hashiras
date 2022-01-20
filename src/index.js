@@ -25,3 +25,11 @@ information about the hashira.*/
 //     $("#flame1").hide();
 //   }
 // });
+
+// more sammple ui logic:
+
+// $(document).ready(() => {
+//   $("#enter").click (() => {
+//     $("#main").show();
+//     $("#splash").hide();
+//   });
