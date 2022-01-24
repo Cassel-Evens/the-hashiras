@@ -1,40 +1,123 @@
-h1 {
-  color: rgb(253, 0, 0);
-}
 
-.flameline1 {
+#snow {
+  margin: auto;
+  align-content: center;
+}
+.banner {
+  margin: auto;
+  display: block;
+}
+#flameline1, #flameline2, #flameline3, #flamelinefinal, #stoneline1, #stoneline2, #stoneline3, #stonelinefinal,#insectline1,#insectline2,#insectline3,#insectlinefinal {
   display : none;
+} 
+#flameline1 img {
+  margin: auto;
+  display: block;
 }
-
-.flameline2 {
-  display : none;
+#flameline2 img {
+  margin: auto;
+  display: block;
 }
-
-.flameline3 {
-  display : none;
+#flameline3 img {
+  margin: auto;
+  display: block;
 }
-
-.flamelinefinal {
-  display : none;
+#flamelinefinal img {
+  margin: auto;
+  display: block;
 }
-
-.stoneline1 {
-  display : none;
+#stoneline1 img {
+  margin: auto;
+  display: block;
 }
-
-.stoneline2 {
-  display : none;
+#stoneline2 img {
+  margin: auto;
+  display: block;
 }
-
-.stoneline3 {
-  display : none;
+#stoneline3 img {
+  margin: auto;
+  display: block;
 }
-
-.stonelinefinal {
-  display : none;
+#stonelinefinal img {
+  margin: auto;
+  display: block;
 }
-
+#insectline1 img {
+  margin: auto;
+  display: block;
+}
+#insectline2 img {
+  margin: auto;
+  display: block;
+}
+#insectline3 img {
+  margin: auto;
+  display: block;
+}
+#insectlinefinal img {
+  margin: auto;
+  display: block;
+}
 .card-img-top {
   height: 25vh;
   width: 25vh;
+  align-content: center;
+}
+
+body {
+  gap: 50px;
+  text-align: center;
+  align-content: center;
+  margin-inline: 34%;
+  height: 100vh;
+  font-family: "Fjalla One", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.introContinue {
+  animation: burn 1000ms ease-out infinite;
+}
+
+@keyframes burn 
+{
+    0%
+    {
+      color: #ff826e;
+      background: #ffe66e;
+      box-shadow: 0 0 5px 0 #c8000a, 0 0 5px 0 rgba(230, 30, 10, 0.8),
+                  0 0 5px 0 rgba(230, 230, 10, 0.6),
+                  0 0 5px 0 #c8000a, 0 0 5px 0 rgba(230, 30, 10, 0.8),
+                  0 0 5px rgba(230, 230, 10, 0.6);
+    }
+    100%
+    {
+      color: #000;
+      background: #fff;
+      box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0),
+                  0 -30px 30px 10px rgba(230, 30, 10, 0),
+                  0 -20px 10px 0 rgba(255, 255, 10, 0),
+                  0 -35px 40px 30px rgba(255, 130, 10, 0),
+                  0 -30px 30px 10px rgba(230, 30, 10, 0),
+                  0 -20px 10px 0 rgba(255, 255, 10, 0);
+    }
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--colorShadeA);
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.selector {
+  display:none;
 }
