@@ -13,93 +13,89 @@ $(document).ready(() => {
     $(".selector").show();
     $("#intro").hide();
   });
-  $("#selectedStyle").click((event) => {
-    event.preventDefault();
+  $("#selectedStyle").click(() => {
     const style = $("#styles option:selected").val();
-    if (style === "Water") {
-      $("#waterine1").show();
-      $(".selector").hide();
-    } else if (style === "Love") {
-      $("#loveine1").show();
-      $(".selector").hide();
-    } else if (style === "Wind") {
-      $("#windine1").show();
-      $(".selector").hide(); 
-    } else if (style === "Serpent") {
-      $("#serpentine1").show();
-      $(".selector").hide();
-    } else if (style === "Sound") {
-      $("#soundine1").show();
-      $(".selector").hide();
-    } else if (style === "Mist") {
-      $("#mistine1").show();
-      $(".selector").hide();
-    } else if (style === "Insect") {
-      $("#insectine1").show();
-      $(".selector").hide();
-    } else if (style === "Kyojuro Rengoku") { 
-      $("#flameline1").show();
-      $(".selector").hide();
-    } else if (style === "Stone") { 
-      $("#stoneine1").show();
-      $(".selector").hide();
-    }
-    console.log(style);
+    $(style).show();
+    $(".selector").hide();
   });
-  $("#flame1GoodResponse").click(() => {
+  $("#flame1Yes").click(() => {
     $("#flameline2").show();
     $("#flameline1").hide();
   });
-  $("#flame1BadResponse").click(() => {
-    $("#stylesDiv").show();
+  $("#flame1No").click(() => {
+    $(".selector").show();
     $("#flameline1").hide();
   });
-  $("#flame2GoodResponse").click(() => {
+  $("#flame2Yes").click(() => {
     $("#flameline3").show();
     $("#flameline2").hide();
   });
-  $("#flame2BadResponse").click(() => {
-    $("#stylesDiv").show();
+  $("#flame2No").click(() => {
+    $(".selector").show();
     $("#flameline2").hide();
   });
-  $("#flame3GoodResponse").click(() => {
-    $("#flamelineFinal").show();
+  $("#flame3Yes").click(() => {
+    $("#flamelinefinal").show();
     $("#flameline3").hide();
   });
-  $("#flame3BadResponse").click(() => {
-    $("#stylesDiv").show();
+  $("#flame3No").click(() => {
+    $(".selector").show();
     $("#flameline3").hide();
   });
   $("#flameFinalResponse").click(() => {
     $("#intro").show();
-    $("#flameLineFinal").hide();
+    $("#flamelinefinal").hide();
   });
-  $("#stone1GoodResponse").click(() => {
+  $("#stone1Yes").click(() => {
     $("#stoneline2").show();
     $("#stoneline1").hide();
   });
-  $("#stone1BadResponse").click(() => {
-    $("#stylesDiv").show();
+  $("#stone1No").click(() => {
+    $(".selector").show();
     $("#stoneline1").hide();
   });
-  $("#stone2GoodResponse").click(() => {
+  $("#stone2Yes").click(() => {
     $("#stoneline3").show();
     $("#stoneline2").hide();
   });
-  $("#stone2BadResponse").click(() => {
-    $("#stylesDiv").show();
+  $("#stone2No").click(() => {
+    $(".selector").show();
     $("#stoneline2").hide();
   });
-  $("#stone3GoodResponse").click(() => {
-    $("#stonelineFinal").show();
-    $("#stoneline3").hide();
-  });
-  $("#stone3BadResponse").click(() => {
-    $("#stylesDiv").show();
+  $("#stone3Yes").click(() => {
+    $("#stonelinefinal").show();
     $("#stoneline3").hide();
   });
   $("#stoneFinalResponse").click(() => {
     $("#intro").show();
-    $("#stonelineFinal").hide();
+    $("#stonelinefinal").hide();
+  });
+  $("#insect1Yes").click(() => {
+    $("#insectline2").show();
+    $("#insectline1").hide();
+  });
+  $("#insect1No").click(() => {
+    $(".selector").show();
+    $("#insectline1").hide();
+  });
+  $("#insect2Yes").click(() => {
+    $("#insectline3").show();
+    $("#insectline2").hide();
+  });
+  $("#insect2No").click(() => {
+    $("#.selector").show();
+    $("#insectline2").hide();
+  });
+  $("#insect3Yes").click(() => {
+    $("#insectlinefinal").show();
+    $("#insectline3").hide();
+  });
+  $("#insect3No").click(() => {
+    $(".selector").show();
+    $("#insectline3").hide();
+  });
+  $("#insectfinal").click(() => {
+    $("#intro").show();
+    $("#insectlinefinal").hide();
   });
 });
