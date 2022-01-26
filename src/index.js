@@ -3,11 +3,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-
-  // function refresh(){
-  //       window.location.reload("Refresh")
-  //     }
-
 $(document).ready(() => {
   $("#yes18").click(() => {
     $("#intro").show();
@@ -39,7 +34,7 @@ $(document).ready(() => {
     $("#flameline2").hide();
   });
   $("#flame2No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#flameline2").hide();
   });
   $("#flame3Yes").click(() => {
@@ -47,7 +42,7 @@ $(document).ready(() => {
     $("#flameline3").hide();
   });
   $("#flame3No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#flameline3").hide();
   });
   $("#flameFinalResponse").click(() => {
@@ -59,7 +54,7 @@ $(document).ready(() => {
     $("#stoneline1").hide();
   });
   $("#stone1No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#stoneline1").hide();
   });
   $("#stone2Yes").click(() => {
@@ -67,7 +62,7 @@ $(document).ready(() => {
     $("#stoneline2").hide();
   });
   $("#stone2No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#stoneline2").hide();
   });
   $("#stone3Yes").click(() => {
@@ -83,7 +78,7 @@ $(document).ready(() => {
     $("#insectline1").hide();
   });
   $("#insect1No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#insectline1").hide();
   });
   $("#insect2Yes").click(() => {
@@ -91,7 +86,7 @@ $(document).ready(() => {
     $("#insectline2").hide();
   });
   $("#insect2No").click(() => {
-    $("#.selector").show();
+    $("#failure").show();
     $("#insectline2").hide();
   });
   $("#insect3Yes").click(() => {
@@ -99,7 +94,7 @@ $(document).ready(() => {
     $("#insectline3").hide();
   });
   $("#insect3No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#insectline3").hide();
   });
   $("#insectfinal").click(() => {
@@ -107,27 +102,27 @@ $(document).ready(() => {
     $("#insectlinefinal").hide();
   });
   $("#1snakeNo").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#snakereject").hide();
   });
   $("#1waterNo").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#waterreject").hide();
   });
   $("#1soundNo").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#soundreject").hide();
   });
   $("#1windNo").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#windreject").hide();
   });
   $("#1loveNo").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#lovereject").hide();
   });
   $("#1mistNo").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#mistreject").hide();
   });
   $("#restart").click (() => {

@@ -87,31 +87,10 @@
   width: 25vh;
   align-content: center;
 }
-#failure {
-  border: 2px;
-  height: fit-content;
-  width: 50%;
-  margin: auto;
-  align-content: center;
-}
-#failure h4 {
-  overflow: hidden; 
-  border-right: 1rem solid rgb(0, 0, 0); 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 1.0s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  100% { border-color: rgb(0, 0, 0); }
-}
+/* #failure {
+  min-height: 100%;
+  overflow: hidden;
+} */
 body {
   gap: 50px;
   text-align: center;
@@ -201,4 +180,40 @@ button {
   margin: 5%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color:  #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#failure {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 40px;
+}
+#failure span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
