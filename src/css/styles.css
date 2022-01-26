@@ -7,7 +7,7 @@
   margin: auto;
   display: block;
 }
-#flameline1, #flameline2, #flameline3, #flamelinefinal, #stoneline1, #stoneline2, #stoneline3, #stonelinefinal,#insectline1,#insectline2,#insectline3,#insectlinefinal {
+#bye, #intro, .selector, #flameline1, #flameline2, #flameline3, #flamelinefinal, #stoneline1, #stoneline2, #stoneline3, #stonelinefinal,#insectline1,#insectline2,#insectline3,#insectlinefinal, #snakereject, #waterreject, #soundreject, #windreject, #lovereject{
   display : none;
 } 
 #flameline1 img {
@@ -58,6 +58,27 @@
   margin: auto;
   display: block;
 }
+#snakereject img {
+  margin: auto;
+  display: block;
+}
+#waterreject img {
+  margin: auto;
+  display: block;
+}
+#soundreject img {
+  margin: auto;
+  display: block;
+}
+#windreject img {
+  margin: auto;
+  display: block;
+}
+#lovereject img {
+  margin: auto;
+  display: block;
+}
+
 .card-img-top {
   height: 25vh;
   width: 25vh;
@@ -118,6 +139,12 @@ button {
   font-family: inherit;
 }
 
-.selector {
-  display:none;
+#idCheck {
+  margin-top: 20%;
 }
+
+#yes18 {
+  margin: 5%;
+}
+
+

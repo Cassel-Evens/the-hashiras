@@ -9,6 +9,14 @@ import './css/styles.css';
   //     }
 
 $(document).ready(() => {
+  $("#yes18").click(() => {
+    $("#intro").show();
+    $("#idCheck").hide();
+  });
+  $("#no18").click(() => {
+    $("#bye").show();
+    $("#idCheck").hide();
+  });
   $(".introContinue").click(() => {
     $(".selector").show();
     $("#intro").hide();
@@ -97,5 +105,25 @@ $(document).ready(() => {
   $("#insectfinal").click(() => {
     $("#intro").show();
     $("#insectlinefinal").hide();
+  });
+  $("#1snakeNo").click(() => {
+    $("#intro").show();
+    $("#snakereject").hide();
+  });
+  $("#1waterNo").click(() => {
+    $("#intro").show();
+    $("#waterreject").hide();
+  });
+  $("#1soundNo").click(() => {
+    $("#intro").show();
+    $("#soundreject").hide();
+  });
+  $("#1windNo").click(() => {
+    $("#intro").show();
+    $("#windreject").hide();
+  });
+  $("#1loveNo").click(() => {
+    $("#intro").show();
+    $("#lovereject").hide();
   });
 });
