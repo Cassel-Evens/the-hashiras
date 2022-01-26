@@ -7,7 +7,7 @@
   margin: auto;
   display: block;
 }
-#bye, #intro, .selector, #flameline1, #flameline2, #flameline3, #flamelinefinal, #stoneline1, #stoneline2, #stoneline3, #stonelinefinal,#insectline1,#insectline2,#insectline3,#insectlinefinal, #snakereject, #waterreject, #soundreject, #windreject, #lovereject{
+#bye, #intro, .selector, #flameline1, #flameline2, #flameline3, #flamelinefinal, #stoneline1, #stoneline2, #stoneline3, #stonelinefinal,#insectline1,#insectline2,#insectline3,#insectlinefinal, #snakereject, #waterreject, #soundreject, #windreject, #lovereject, #mistreject, #failure{
   display : none;
 } 
 #flameline1 img {
@@ -78,13 +78,40 @@
   margin: auto;
   display: block;
 }
-
+#mistreject img {
+  margin: auto;
+  display: block;
+}
 .card-img-top {
   height: 25vh;
   width: 25vh;
   align-content: center;
 }
-
+#failure {
+  border: 2px;
+  height: fit-content;
+  width: 50%;
+  margin: auto;
+  align-content: center;
+}
+#failure h4 {
+  overflow: hidden; 
+  border-right: 1rem solid rgb(0, 0, 0); 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 1.0s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  100% { border-color: rgb(0, 0, 0); }
+}
 body {
   gap: 50px;
   text-align: center;
@@ -96,6 +123,33 @@ body {
   align-items: center;
 }
 
+.bye {
+  animation: icy 1000ms ease-out infinite;
+}
+
+@keyframes icy 
+{
+    0%
+    {
+      color: blue;
+      background: #75b3ad;
+      box-shadow: 0 0 5px 0 rgb(37, 74, 195), 0 0 5px 0 rgba(10, 204, 230, 0.8),
+                  0 0 5px 0 rgba(10, 204, 230, 0.8),
+                  0 0 5px 0 #0014c8, 0 0 5px 0 rgba(32, 10, 230, 0.8),
+                  0 0 5px rgba(10, 204, 230, 0.85);
+    }
+    100%
+    {
+      color: #000;
+      background: #fff;
+      box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0),
+                  0 -30px 30px 10px rgba(230, 30, 10, 0),
+                  0 -20px 10px 0 rgba(255, 255, 10, 0),
+                  0 -35px 40px 30px rgba(255, 130, 10, 0),
+                  0 -30px 30px 10px rgba(230, 30, 10, 0),
+                  0 -20px 10px 0 rgba(255, 255, 10, 0);
+    }
+}
 
 .introContinue {
   animation: burn 1000ms ease-out infinite;

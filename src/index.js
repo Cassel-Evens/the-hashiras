@@ -31,7 +31,7 @@ $(document).ready(() => {
     $("#flameline1").hide();
   });
   $("#flame1No").click(() => {
-    $(".selector").show();
+    $("#failure").show();
     $("#flameline1").hide();
   });
   $("#flame2Yes").click(() => {
@@ -125,5 +125,13 @@ $(document).ready(() => {
   $("#1loveNo").click(() => {
     $("#intro").show();
     $("#lovereject").hide();
+  });
+  $("#1mistNo").click(() => {
+    $("#intro").show();
+    $("#mistreject").hide();
+  });
+  $("#restart").click (() => {
+    $(".selector").show();
+    $("#failure").hide();
   });
 });
