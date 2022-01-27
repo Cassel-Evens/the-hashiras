@@ -10,8 +10,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* ----------- BYE */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 svg {
     display: block;
@@ -51,8 +49,6 @@ svg {
 @keyframes stroke-offset{
   100% {stroke-dashoffset: -35%;}
 }
-/* ------------ */
-
 .banner {
   margin: auto;
   display: block;
@@ -137,39 +133,9 @@ svg {
   width: 25vh;
   align-content: center;
 }
-/* ------------ */
-.bye {
-  animation: icy 1000ms ease-out infinite;
-}
-
-@keyframes icy 
-{
-    0%
-    {
-      color: blue;
-      background: #75b3ad;
-      box-shadow: 0 0 5px 0 rgb(37, 74, 195), 0 0 5px 0 rgba(10, 204, 230, 0.8),
-                  0 0 5px 0 rgba(10, 204, 230, 0.8),
-                  0 0 5px 0 #0014c8, 0 0 5px 0 rgba(32, 10, 230, 0.8),
-                  0 0 5px rgba(10, 204, 230, 0.85);
-    }
-    100%
-    {
-      color: #000;
-      background: #fff;
-      box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0),
-                  0 -30px 30px 10px rgba(230, 30, 10, 0),
-                  0 -20px 10px 0 rgba(255, 255, 10, 0),
-                  0 -35px 40px 30px rgba(255, 130, 10, 0),
-                  0 -30px 30px 10px rgba(230, 30, 10, 0),
-                  0 -20px 10px 0 rgba(255, 255, 10, 0);
-    }
-}
-
 .introContinue {
   animation: burn 1000ms ease-out infinite;
 }
-
 @keyframes burn 
 {
     0%
@@ -193,7 +159,6 @@ svg {
                   0 -20px 10px 0 rgba(255, 255, 10, 0);
     }
 }
-/* --------- */
 button {
   position: relative;
   display: inline-block;
