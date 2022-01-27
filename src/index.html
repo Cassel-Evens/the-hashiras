@@ -25,9 +25,21 @@
   </div>
 
   <div id="bye">
-    <div class="d-flex justify-content-center">
-      <h1 style="font-size:50vw">Bye</h1>
-    </div>
+    <svg viewBox="0 0 960 300">
+      <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="80%">BYE. </text>
+        <text text-anchor="middle" x="52%" y="80%">BYE. </text>
+        
+      </symbol>
+    
+      <g class = "g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+      </g>
+    </svg>
   </div>
 
   <div id="intro">
@@ -63,7 +75,7 @@
     <img class="selector-image" src = "/src/assets/images/Weak fella.jpg" height = "300vh" width =  "300vh">
     <label for="hashiras">Choose your style!</label>
     <select name="styles" id="styles">
-      <option value="#waterreject">Water</option>
+      <option value="#waterreject" id="water">Water</option>
       <option value="#lovereject">Love</option>
       <option value="#windreject">Wind</option>
       <option value="#snakereject">Serpent</option>

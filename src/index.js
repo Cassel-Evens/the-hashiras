@@ -98,7 +98,7 @@ $(document).ready(() => {
     $("#insectline3").hide();
   });
   $("#insectfinal").click(() => {
-    $("#intro").show();
+    $("#failure").show();
     $("#insectlinefinal").hide();
   });
   $("#1snakeNo").click(() => {

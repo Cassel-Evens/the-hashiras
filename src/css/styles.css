@@ -1,4 +1,13 @@
-
+body {
+  gap: 50px;
+  text-align: center;
+  align-content: center;
+  margin-inline: 34%;
+  height: 100vh;
+  font-family: "Fjalla One", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
 #snow {
   margin: auto;
   align-content: center;
@@ -6,6 +15,28 @@
 .banner {
   margin: auto;
   display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.hidden_message {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.72);
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+.theCharacter:hover .hidden_message {
+  visibility: visible;
+  opacity: 1;
 }
 #bye, #intro, .selector, #flameline1, #flameline2, #flameline3, #flamelinefinal, #stoneline1, #stoneline2, #stoneline3, #stonelinefinal,#insectline1,#insectline2,#insectline3,#insectlinefinal, #snakereject, #waterreject, #soundreject, #windreject, #lovereject, #mistreject, #failure{
   display : none;
@@ -87,20 +118,8 @@
   width: 25vh;
   align-content: center;
 }
-/* #failure {
-  min-height: 100%;
-  overflow: hidden;
-} */
-body {
-  gap: 50px;
-  text-align: center;
-  align-content: center;
-  margin-inline: 34%;
-  height: 100vh;
-  font-family: "Fjalla One", sans-serif;
-  justify-content: center;
-  align-items: center;
-}
+
+
 
 .bye {
   animation: icy 1000ms ease-out infinite;
@@ -216,4 +235,45 @@ body {
   20% {
     transform: translateY(-20px)
   }
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+.text-copy:nth-child(1){
+  stroke: #ff0000;
+  animation-delay: -1;
+}
+.text-copy:nth-child(2){
+  stroke: #fa0000;
+  animation-delay: -2s;
+}
+.text-copy:nth-child(3){
+  stroke: #020202;
+  animation-delay: -3s;
+}
+.text-copy:nth-child(4){
+  stroke: #ff0000;
+  animation-delay: -4s;
+}
+.text-copy:nth-child(5){
+  stroke: #000000;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
 }
